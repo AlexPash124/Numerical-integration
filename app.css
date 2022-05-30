@@ -1,0 +1,55 @@
+.app {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+    height: 100%;
+    max-width: 1000px;
+    margin: auto;
+    background: #8888aa;
+    min-height: 100vh;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    padding: 10px;
+    background: #444455;
+
+}
+
+header .logo img {
+    border-radius: 100px;
+    width: 100px;
+}
+
+header .title {
+    width: 100%;
+    font-size: 18pt;
+    color: #eeeeff;
+    font-weight: bold;
+    text-align: center;
+}
+
+header .btnLink {
+    width: 30px;
+    height: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #eeeeff;
+    border: 1px solid #eeeeff;
+    font-weight: bold;
+    border-radius: 30px;
+    font-size: 18pt;
+    margin: 0 20px;
+}
+
+main {
+    padding: 0 4%;
+}
+
+section .info {
+    background: red;
+}

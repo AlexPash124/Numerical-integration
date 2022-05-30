@@ -1,0 +1,353 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+html {
+  min-height: 100vh;
+}
+body{
+  display: block;
+  background: #555555;
+  font-family: 'Roboto';
+  font-size: 12pt;
+  min-height: 100%;
+  height: auto;;
+}
+p{
+	color: #000	;
+	font-size: 18pt;
+}
+.p12{
+	font-size: 16pt;
+}
+
+a{
+	text-decoration: none;
+	font-size: 10pt;
+	color: red;
+}
+.conteiner{
+	 display: flex;
+ 
+}
+
+.box-1{
+	flex: 0.5;	
+}
+.box-9{
+	flex: 0.1;	
+}
+.box-10{
+	flex: 3;	
+}
+
+.box-2{
+	flex: 2;
+
+}
+.box-3{
+	flex: 1;
+}
+
+input{
+	height: 22px;;
+  background:#fff;
+  border: none;
+  border-bottom: 1px solid #fff;
+  padding: 2px;
+  display: block;
+  outline: none;
+  font-family: monospace;
+  font-size: 14pt;
+  
+}
+
+.intCalcContainer {
+  display: flex;
+  margin: 20px auto;
+  padding: 30px 20px;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  background: #777799;
+  flex-direction: column;
+  box-shadow: 10px 10px 10px #444;
+}
+
+
+
+.intSignContainer input {
+  height: 30px;
+} 
+.btn, .input {
+  font-size: 14pt;
+  border: 2px solid #fff;
+  display: inline-block;
+  height: 40px;
+  padding: 0 10px;
+  background: transparent;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: .2s;
+  outline: none;
+  font-family: 'Roboto';
+
+}
+
+.input, select {
+  background: rgba(160, 200, 200, 0.4)
+}
+.btn {
+  background: rgba(151, 209, 96, 0.4)
+}
+
+.input:focus {
+  border-color: #44a;
+}
+
+.btn:hover {
+  background: #fff;
+}
+.btn:active {
+  transform: scale(.98);
+}
+
+
+/* .intSignContainer input:focus {
+  border-bottom: 2px solid #000;
+} */
+
+.intCalc {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+}
+.getForm {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+
+.intSignContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+#intAnswerValue {
+  font-size: 18pt;
+}
+.eq {
+  padding: 0 5px;
+  font-size: 18pt;
+}
+
+.intSign {
+  height: 90px;
+  margin: 5px 0;
+}
+#intStart {
+  display: block;
+  text-align: center;
+
+}
+
+#intEnd {
+  align-self: flex-end;
+  text-align: center;
+}
+
+#intStart, #intEnd {
+  resize: both;
+}
+
+.intSignContainer input {
+  width: 40px;
+}
+
+.intFormula {
+  display: flex;
+}
+
+
+
+.intDef {
+  height: 22px;
+  font-family: monospace;
+  font-size: 14pt;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  justify-content: center;
+  padding-bottom: 3px;
+  width: 25px;
+  font-weight: bold;
+}
+.intCalc .intFormula input#intVar {
+  width: 25px;
+  text-align: center;
+  padding: 0;
+}
+
+.intAnswer {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  font-family: monospace;
+  font-size: 14pt;
+}
+
+.intAnswerText {
+  font-weight: bold;
+  margin-right: 5px;
+  display: flex;
+}
+
+.legend {
+  display: flex;
+  text-align: left;
+  flex-direction: column;
+  width: 100%;
+  padding: 20px;
+  /* background: #D2B48C; */
+  border-top: 2px solid #000;
+  font-family: sans-serif;
+  font-size: 15pt;
+}
+
+.legendItem {
+  padding: 10px 0;
+}
+
+.legendItemHeader  {
+  font-weight: bold;
+}
+
+.legendItemValue {
+  margin-left: 10px;
+  margin-top: 5px;
+  font-family: monospace;
+}
+.legendItemValue strong {
+  font-weight: 600;
+  font-style: italic;
+  color: #111;
+}
+
+
+
+ul, li {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.menu {
+  display: inline-block;
+}
+.menu > li {
+  position: relative;
+  float: left;
+  margin-right: 3em;
+  background-color: #fff;
+}
+.menu > li span {
+  position: relative;
+  top: -3px;
+  z-index: 2;
+  display: inline-block;
+  border-radius: 10px 10px 0 0;
+  padding: .31em;
+  text-decoration: underline;
+  cursor: pointer;
+  background-color: #fff;
+}
+.menu > li:hover span {
+  text-decoration: none;
+  color: #000;
+  box-shadow: 0 6px 0 0 #fff, 0 0 6px 3px #ccc;
+}
+.menu > li:hover .dropdown {
+  display: block;
+  background-color: #876;
+}
+.menu::after {
+  content: '';
+  display: block;
+  clear: both;
+}
+.dropdown {
+  position: absolute;
+  top: 100%;
+  z-index: 1;
+  width: 380%;
+  display: none;
+  padding: .13em;
+  box-shadow: 0 0 6px 3px #ccc;
+  background-color: #fff;
+}
+.dropdown > li {
+  padding: .19em 3em .19em .19em;
+  cursor: pointer;
+}
+.dropdown > li:hover {
+  color: #fff;
+  background-color: #123;
+}
+
+.intControl {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+.intControl > * {
+  margin: 0 5px;
+}
+
+select {
+  font-size: 14pt;
+  border: 2px solid #fff;
+  display: inline-block;
+  height: 40px;
+  padding: 5px;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: .2s;
+  outline: none;
+}
+.koma{
+	font-size: 16pt;
+	elign: center;
+}
+/* button.new {
+    padding: 6px 60px;
+   color: #333;
+  font-size: 16pt;
+   border: 1px solid #666;
+   elign: center;
+  } */
+
+.inputs {
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.inputs input, .inputs button {
+  box-sizing: border-box;
+  display: inline-block;  
+  width: 200px;
+  height: 40px;
+}
+
+.inputs input {
+  background: rgba(160, 200, 200, 0.4)
+}
+
+.rules{
+  font-size: 18pt;
+  text-align: center;
+  color: #eeeeff;
+}
